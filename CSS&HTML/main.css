@@ -485,9 +485,9 @@ section.giveaway-enter {
 section.prices .container {
   width: 100%;
   height: 100vh;
-  padding: 1% 2%;
-  background: #fff;
-  min-height: 200px;
+  padding: 4% 3%;
+        background: #fff;
+        min-height: 290px;
   max-height: 220px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
