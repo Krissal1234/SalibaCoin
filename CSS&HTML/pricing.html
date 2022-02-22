@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pricing</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class = "navbar">
+      <img  class="logo-image" src="Images/SCnewDan.png" alt="">
+        <div class="container">
+            <a id = "home2" class="logo" href="#">Saliba<span>Coin</span></a>
+  
+            <img id="mobileCta"class = "mobileMenu"src="Images/menu.svg" alt="Open Navigation">
+  
+            <nav>
+                <img id="mobileExit" class = "mobileMenuExit"src="Images/exit.svg" alt="Exit navigation bar">
+              <ul class = "primary-Nav">
+                  <li id = "home"><a href="#">Home</a></li>
+                  <li id = "features"><a href="#">Giveaways</a></li>
+                  <li id = "pricing" class = "current"><a href="#">Pricing</a></li>
+              </ul>
+  
+              <ul class = "secondary-Nav">
+                  
+               <li class="go-premium-cta"><a href="http://127.0.0.1:5500/BuySalibaCoin.html">Buy SalibaCoin</a></li>
+                
+              </ul>
+            </nav>
+        </div>
+     </div>
+     <section class="prices">
+        
+         <div class="container">
+          <h3>The market price of 1 Saliba<span>Coin</span> changes rapidly, so be sure to check on the price regularly. <br>
+            The current market Price can be found using the calculator below.
+            <br>
+            <br>
+             If you would like to purchase,<br>
+             please click on '<span>buy SalibaCoin</span>' at the top right.</h3>
+          </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="calculator">
+                <h2>Calculate current SalibaCoin price:</h2>
+                
+                    
+                    
+
+                 <label for="name">Amount:</label>
+                 <input  type="number" id="userInput" name="userInput" placeholder="Enter the number of SalibaCoins you would like to calculate to €"  required>
+                 
+                   
+    
+                 
+                
+                 <h3 id="displayPrice"> </h3>
+                
+                <button type ="submit" onclick="calculatePrice()"  value="submit">Calculate</button>
+              </div>
+     </section>
+     <script>
+        const mobileBtn = document.getElementById('mobileCta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobileExit');
+        let homeScreen = document.getElementById('home')
+        homeScreen2 = document.getElementById('home2')
+        pricingScreen = document.getElementById('pricing')
+        featuresScreen = document.getElementById('features')
+console.log('test');
+        
+      
+
+      function calculatePrice(){
+        var input = document.getElementById('userInput').value;
+        var currentPrice = 0.75;
+          var calculatedPrice = currentPrice * input;
+          if (input > 1){
+            document.getElementById('displayPrice').innerHTML = input + ' SalibaCoins are worth €'+ calculatedPrice;
+          }
+         else if(input ==1){
+            document.getElementById('displayPrice').innerHTML = input + ' SalibaCoin is worth €'+ calculatedPrice;
+          }else{
+            document.getElementById('displayPrice').innerHTML = 'Please enter a number greater than 0';
+          }
+      }
+      
+   
+            
+            
+           
+      
+
+
+        mobileBtn.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+             nav.classList.add('menu-btn');
+ 
+        })
+        mobileBtnExit.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+             nav.classList.remove('menu-btn');
+ 
+        })
+        
+        homeScreen.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            window.location.href = 'http://127.0.0.1:5500/index.html#';
+ 
+        })
+        homeScreen2.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            window.location.href = 'http://127.0.0.1:5500/index.html#';
+ 
+        })
+        pricingScreen.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            window.location.href = 'http://127.0.0.1:5500/pricing.html';
+ 
+        })
+        featuresScreen.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            window.location.href = 'http://127.0.0.1:5500/features.html';
+ 
+        })
+        
+    </script>
+</body>
+</html>

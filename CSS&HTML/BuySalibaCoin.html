@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Buy Coins</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class = "navbar">
+        <img  class="logo-image" src="Images/SCnewDan.png" alt="">
+        <div class="container">
+            <a id = "home2"class="logo" href="#">Saliba<span>Coin</span></a>
+  
+            <img id="mobileCta"class = "mobileMenu"src="Images/menu.svg" alt="Open Navigation">
+  
+            <nav>
+                <img id="mobileExit" class = "mobileMenuExit"src="Images/exit.svg" alt="Exit navigation bar">
+              <ul class = "primary-Nav">
+                  <li id = "home"><a href="#">Home</a></li>
+                  <li id = "features" ><a href="#">Giveaways</a></li>
+                  <li id = "pricing" ><a href="#">Pricing</a></li>
+              </ul>
+  
+              <ul class = "secondary-Nav">
+                  
+                  <li class="go-premium-cta" class = "current"><a href="#">Buy SalibaCoin</a></li>
+                
+              </ul>
+            </nav>
+        </div>
+     </div>
+
+     <section class="buyCoins">
+        <!<img src="Images/export-2022-02-20 104625.svg" alt="">
+            <h2>Enter your details below <br>to get details about the transaction.</h2>
+            
+            <div class="freeCoinsDetails">
+                
+
+                <div class="tutorial"><a href="http://127.0.0.1:5500/instructions.html">Click here for 'Solflare' installation instructions.</a></div>
+                
+                <form action="https://formsubmit.co/salibacoin@gmail.com" method="POST">
+                    <br>
+
+                 <label for="name">Name</label>
+                 <input size="3" type="text" id="name" name="name" placeholder="Your Name"  required>
+                 
+                   
+                 <label for="name">Email</label>
+                 <input type="email" id="email" name="email" placeholder="example@gmail.com" required size="2">
+                 
+                 <label for="name">Amount</label>
+                 <input size="3" type="text" id="name" name="name" placeholder="Please enter the required amount of SalibaCoins you would like to purchase."  required>
+                
+                 <label for="message">SOL address (e.g. Solflare address)</label>
+                 <input type="text" id="text" name="text" placeholder="e.g. ADFHD546FGDH758FHJDV etc..." required>
+
+                 <input type="submit" class="send-message-cta" value="Send message">
+                
+                </form>
+                <h4>Please note the current price of 1 SalibaCoin is €0.75. </h4>
+                <h5>Price calculation and more details on pricing, can be found at the 'Pricing tab'. <br>SalibaCoin cannot be returned, sorry for any inconveniences. </h5>
+            
+            </div>
+     </section>
+
+     <script>
+        const mobileBtn = document.getElementById('mobileCta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobileExit');
+        let homeScreen = document.getElementById('home')
+        homeScreen2 = document.getElementById('home2')
+        pricingScreen = document.getElementById('pricing')
+        featuresScreen = document.getElementById('features');
+        mobileBtn.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+             nav.classList.add('menu-btn');
+ 
+        })
+        mobileBtnExit.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+             nav.classList.remove('menu-btn');
+ 
+        })
+        
+        homeScreen.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            window.location.href = 'http://127.0.0.1:5500/index.html#';
+ 
+        })
+        homeScreen2.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            window.location.href = 'http://127.0.0.1:5500/index.html#';
+ 
+        })
+        pricingScreen.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            window.location.href = 'http://127.0.0.1:5500/pricing.html';
+ 
+        })
+        featuresScreen.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            window.location.href = 'http://127.0.0.1:5500/features.html';
+ 
+        })
+        
+    </script>
+</body>
+</html>

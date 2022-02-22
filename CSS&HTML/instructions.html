@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Download Instructions</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div class = "navbar">
+        <img  class="logo-image" src="Images/SCnewDan.png" alt="">
+        <div class="container">
+            <a id = "home2"class="logo" href="#">Saliba<span>Coin</span></a>
+  
+            <img id="mobileCta"class = "mobileMenu"src="Images/menu.svg" alt="Open Navigation">
+  
+            <nav>
+                <img id="mobileExit" class = "mobileMenuExit"src="Images/exit.svg" alt="Exit navigation bar">
+              <ul class = "primary-Nav">
+                  <li id = "home"><a href="#">Home</a></li>
+                  <li id = "features"><a href="#">Giveaways</a></li>
+                  <li id = "pricing" ><a href="#">Pricing</a></li>
+              </ul>
+  
+              <ul class = "secondary-Nav">
+                  
+                  <li class="go-premium-cta"><a href="http://127.0.0.1:5500/BuySalibaCoin.html">Buy SalibaCoin</a></li>
+                
+              </ul>
+            </nav>
+        </div>
+     </div>
+     <section class="instructions-center">
+     <div >
+     <h1>Instructions:</h1>
+     
+   
+     <h3>Step 1: <br> Download 'Solflare' on the PlayStore/Appstore or 'phantom' GoogleChrome extention
+       
+     </h3>
+     <img src="Images/instruction1.PNG" alt="">
+<br>
+<br>
+     <h3>Step 2: <br> Follow Instructions on the app, Create a password <br> 
+       
+     </h3>
+<br>
+<br>
+     <h3>Step 3: <br> Your Sol address can be found here, this is needed when receiving/sending coins. <br> 
+       <img src="Images/Screenshot_20220222-131546.jpg" alt="">
+     </h3>
+    </div>
+</section>
+     <script>
+        const mobileBtn = document.getElementById('mobileCta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobileExit');
+        let homeScreen = document.getElementById('home')
+        homeScreen2 = document.getElementById('home2')
+        pricingScreen = document.getElementById('pricing')
+        featuresScreen = document.getElementById('features');
+        mobileBtn.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+             nav.classList.add('menu-btn');
+ 
+        })
+        mobileBtnExit.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+             nav.classList.remove('menu-btn');
+ 
+        })
+        
+        homeScreen.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            window.location.href = 'http://127.0.0.1:5500/index.html#';
+ 
+        })
+        homeScreen2.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            window.location.href = 'http://127.0.0.1:5500/index.html#';
+ 
+        })
+        pricingScreen.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            window.location.href = 'http://127.0.0.1:5500/pricing.html';
+ 
+        })
+        featuresScreen.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            window.location.href = 'http://127.0.0.1:5500/features.html';
+ 
+        })
+        
+    </script>
+</body>
+</html>
