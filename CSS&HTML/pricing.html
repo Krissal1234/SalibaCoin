@@ -33,42 +33,46 @@
           </nav>
       </div>
    </div>
-     <section class="prices">
+   <section class="prices">
         
-         <div class="container">
-          <h3>The market price of 1 Saliba<span>Coin</span> changes rapidly, so be sure to check on the price regularly. <br>
-            The current market Price can be found using the calculator below.
-            <br>
-            <br>
-             If you would like to purchase,<br>
-             please click on '<span>buy SalibaCoin</span>' at the top right.</h3>
-          </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="calculator">
-                <h2>Calculate current SalibaCoin price:</h2>
-                
-                    
-                    
-
-                 <label for="name">Amount:</label>
-                 <input  type="number" id="userInput" name="userInput" placeholder="Enter the number of SalibaCoins you would like to calculate to €"  required>
-                 
-                   
-    
-                 
-                
-                 <h3 id="displayPrice"> </h3>
-                
-                <button type ="submit" onclick="calculatePrice()"  value="submit">Calculate</button>
-              </div>
+    <div class="container">
+     <h3>The market price of 1 Saliba<span>Coin</span> changes rapidly, so be sure to check on the price regularly. <br>
+       The current market Price can be found using the calculator below.
+       <br>
+       <br>
+        If you would like to purchase,<br>
+        please click on '<span>buy SalibaCoin</span>' at the top right.</h3>
+     
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+<br>
+       <br>
+       
      </section>
+    <section class="calculator-sect">
+           <h2>Calculate current SalibaCoin price:</h2>
+           
+               
+               
+
+            <label for="name">Amount:</label>
+            <input  type="number" id="userInput" name="userInput" placeholder="Enter the number of SalibaCoins you would like to calculate to €"  required>
+            
+              
+
+            
+           
+            <h3 id="displayPrice"> </h3>
+           
+           <button type ="submit" onclick="calculatePrice()"  value="submit">Calculate</button>
+         </section>
+   </div>
+
      <script>
         const mobileBtn = document.getElementById('mobileCta')
         nav = document.querySelector('nav')
