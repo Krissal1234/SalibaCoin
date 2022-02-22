@@ -242,6 +242,7 @@ nav li a:hover {
   margin: .5em;
   cursor: pointer;
 }
+
 .iframe-container {
   position: relative;
   width: 100%;
@@ -514,12 +515,17 @@ section.instructions-center {
 section.giveaway-enter {
   background: var(--purple-colour);
 }
+
+section.prices {
+  top: 0;
+}
+
 section.prices .container {
   width: 100%;
   height: 100vh;
   padding: 4% 3%;
-        background: #fff;
-        min-height: 300px;
+  background: #fff;
+  min-height: 290px;
   max-height: 220px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -533,19 +539,4 @@ section.prices .container:hover {
 section.calculator-sect {
   background-color: var(--purple-colour);
 }
-.iframe-container{
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; 
-  height: 80%;
-}
-.iframe-container iframe{
-  position: absolute;
-  
-  top:0;
-  left: 3em;
-  width: 80%;
-  height: 80%;
-}
-
 /*# sourceMappingURL=main.css.map */
