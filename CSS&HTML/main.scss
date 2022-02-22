@@ -223,6 +223,20 @@ font-weight: bold;
     cursor: pointer;
 
 }
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 80%;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    
+    top:0;
+    left: 3em;
+    width: 80%;
+    height: 80%;
+  }
 //media query used for responsive css(showing more of the screen when screen size enlarged
 @media only screen and (min-width: 768px){
     .mobileMenu, .mobileMenuExit{
@@ -300,6 +314,25 @@ font-weight: bold;
         margin: 0 auto;
 
     }
+    .iframe-container{
+        //position: relative;
+        width: 500px;
+        padding-bottom: 56.25%; 
+        height: 75%;
+        padding: 15em;
+        //padding-right: 25em;
+        display: flex;
+        justify-content: space-between;
+      }
+      .iframe-container iframe{
+        //position: absolute;
+        
+        top:0;
+        left: 15em;
+        width: 60%;
+        height: 70%;
+        
+      }
     .logo-image{
         float: left;
         
