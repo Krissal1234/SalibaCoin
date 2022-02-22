@@ -501,5 +501,19 @@ section.prices .container:hover {
 section.calculator-sect {
   background-color: var(--purple-colour);
 }
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 80%;
+}
+.iframe-container iframe{
+  position: absolute;
+  
+  top:0;
+  left: 3em;
+  width: 80%;
+  height: 80%;
+}
 
 /*# sourceMappingURL=main.css.map */
