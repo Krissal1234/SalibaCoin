@@ -326,6 +326,7 @@ nav li a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-left: 7em;
   }
   .iframe-container iframe {
     top: 0;
@@ -333,6 +334,7 @@ nav li a:hover {
     width: 60%;
     height: 70%;
   }
+  
   .logo-image {
     float: left;
     padding-bottom: 2em;
