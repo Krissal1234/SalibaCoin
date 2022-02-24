@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #dff1ef;
+  background: var(--purple-colour);
   margin: 0;
   font-family: 'Poppins';
 }
