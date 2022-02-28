@@ -519,16 +519,16 @@ section.giveaway-enter {
 }
 
 section.prices {
-  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 section.prices .container {
+  margin-top: 1em;
   width: 100%;
-  height: 100vh;
-  padding: 4% 3%;
-  background: #fff;
-  min-height: 290px;
-  max-height: 220px;
+  height: 80vh;
+  max-height: 250px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
