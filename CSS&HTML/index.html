@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALIBACOIN</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <div class = "navbar">
+    <img  class="logo-image" src="Images/SCnewDan.png" alt="SalibaCoin Image">
+      <div class="container">
+         
+          <a class="logo" href="index.html">Saliba<span>Coin</span></a>
+
+          <img id="mobileCta"class = "mobileMenu"src="Images/menu.svg" alt="Open Navigation">
+
+          <nav>
+              <img id="mobileExit" class = "mobileMenuExit"src="Images/exit.svg" alt="Exit navigation bar">
+            <ul class = "primary-Nav">
+                <li id = "home" class = "current"><a href="index.html">Home</a></li>
+                <li id = "features"><a href="features.html">Giveaways</a></li>
+                <li id = "pricing"><a href="pricing.html">Pricing</a></li>
+            </ul>
+
+            <ul class = "secondary-Nav">
+              
+                <li class="go-premium-cta"><a href="BuySalibaCoin.html">Buy SalibaCoin</a></li>
+              
+            </ul>
+          </nav>
+      </div>
+   </div>
+   <section class="hero">
+    <div class="container">
+        <div class="leftColumn">
+            <p class="subHead">The universal Currency &#128540</p>
+            <h1>The Official BBFC Currency</h1>
+
+             <div class="hero-cta">
+                 <a href="freeCoins.html" class="primary-cta" id="freeCoins">Get your first 5 coins for free!</a>
+                 <a href="https://youtu.be/B9Gtg0YOPTU" class="watchVideo-cta">
+                     <!<img src="Images/watch.svg" alt="watch our SalibaCoin animation">
+                 </a>
+             </div>
+           
+
+
+ 
+        </div>
+         <img src="Images/SCnewDan.png" class="hero-img" alt="Illustration">
+    </div>
+    <div class="iframe-container">
+     <iframe width="100" height="215" src="https://www.youtube.com/embed/B9Gtg0YOPTU" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+</section> 
+
+
+   <section class="features-section">
+       <div class="container">
+           <ul class="features-list">
+               <li>Simple set up</li>
+               <li>Easy to use</li>
+               <li>First 5 coins free</li>
+               <li>Quick tranfser times</li>
+               <li>CEO is a very cool guy</li>
+               <li>Other awesome features</li>
+           </ul>
+
+
+       </div>
+   </section>
+   <section class="reviewsSection">
+       <div class="container">
+           <ul>
+               <li >
+            </cite>
+            <img src="Images/Kris Saliba.PNG" alt="Kris quote">
+            <blockquote>"A few Weeks ago SalibaCoin was merely a dream that appeared to be impossible. However with a great deal
+                of hard work and dedication, this dream has become a reality, and I would like to thank everyone who was involved.
+                 Now lets work together to make
+                SalibaCoin the UNIVERSAL CURRENCY!"</blockquote>
+            <cite class="CEO">- Kris Saliba, Creator/Web Developer                    
+            </cite>&#128081&#128081
+               </li>
+                
+                    <li>
+                   <img src="Images/Dan.PNG" alt="Kris Quote">
+                   <blockquote>"SalibaCoin does not only show 
+                       promises for a better and more sustainabile future,
+                        but also embodies the technological 
+                        advancements made in the past and present"</blockquote>
+                   <cite>- Daniel Formosa, Graphic Designer  </cite> &#127912               
+               </li>
+               <li>
+                <img src="Images/johann.PNG" alt="Johann quote">
+                <blockquote>"At first, when Kris mentioned the idea to me I was in shock and didn't think he would put in the work, however time and time again he keeps 
+                    proving the universe that he knows what to do and how to do it. He is the pure embodiment of an entrepreneur and will change this world forever!"</blockquote>
+                <cite>- Johann Hirth, Anthropologist</cite> &#127757&#127789 
+           
+               </li>
+           </ul>
+       </div>
+   </section>
+   <section class="contactSection">
+       <div class="container">
+           <div class="contactLeft">
+               <h2>Contact Info</h2>
+
+               <form action="https://formsubmit.co/salibacoin@gmail.com" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                <label for="name">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <label for="message">Message</label>
+                <textarea placeholder= "If your query regards your balance, please include your SOL Address along with your query"name="message" id="message" cols="30" rows="10"></textarea>
+                   <input type="hidden" name="_next" value="thankyou.html">
+                <input type="submit" class="send-message-cta" value="Send message">
+               </form>
+
+           </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d413463.64912021486!2d14.37835!3d35.942449999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e45281d8647c5%3A0xf582d86136be4239!2sMalta!5e0!3m2!1sen!2smt!4v1645306093136!5m2!1sen!2smt" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+       </div>
+   </section>
+   <script>
+       const mobileBtn = document.getElementById('mobileCta')
+       nav = document.querySelector('nav')
+       mobileBtnExit = document.getElementById('mobileExit')
+        homeScreen = document.getElementById('home')
+        homeScreen2 = document.getElementById('home2')
+        freeCoins = document.getElementById('freeCoins')
+
+        pricingScreen = document.getElementById('pricing')
+        featuresScreen = document.getElementById('features');
+       mobileBtn.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            nav.classList.add('menu-btn');
+
+       })
+       mobileBtnExit.addEventListener('click', () => {// when button is clicked do whatever is inside these brackets
+            nav.classList.remove('menu-btn');
+
+       })
+
+
+   </script>
+</body>
+</html>
