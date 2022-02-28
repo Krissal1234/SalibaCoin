@@ -151,7 +151,6 @@ ul.features-list{
            
           
         }
-    
 }
 h2{
     font-size: 2em;
@@ -519,15 +518,23 @@ button[type="submit"]{ // Calculate button
    }
 
    section.prices{
-    .container{
-     width: 100%;
-     height: 100vh;
-     padding: 4% 3%;
-        background: #fff;
-        min-height: 300px;
-     max-height: 220px;
-     box-sizing: border-box;
-    }
+    display: flex;
+
+        //top: em;
+  // margin-top: 6em;
+       .container{
+           margin-top: 1em;
+        width: 100%;
+        height: 80vh;
+       
+       // padding: 1% ;
+        //background: var(--subtle-blue-colour);
+        //min-height: 200px;
+        max-height: 250px;
+        box-sizing: border-box;
+        //margin-bottom: 9em;
+        
+       }
     .container:hover{
      box-shadow:0 5px 10px rgba(0,0,0,.15);
  }
